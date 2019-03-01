@@ -1,0 +1,40 @@
+$color-background = rgba(7, 17, 27, 1)
+$color-background-s = rgba(7, 17, 27, 0.8)
+$color-background-ss = rgba(7, 17, 27, 0.5)
+$color-background-sss = rgba(7, 17, 27, 0.2)
+$color-background-ssss = #f3f5f7
+
+$color-red = rgb(240, 20, 20)
+$color-blue = rgb(0, 160, 220)
+$color-light-blue = rgba(0, 160, 220, 0.2)
+$color-green = #00b43c
+
+$color-col-line = #d9dde1
+$color-row-line = rgba(7, 17, 27, 0.1)
+
+// 1px上边线
+border-top-1px($color)
+  position relative
+  &::before
+    content ''
+    position absolute
+    z-index 1000
+    left 0
+    top 0
+    width 100%
+    height 1px
+    background-color $color
+
+// 1px下边线
+border-bottom-1px($color)
+  position relative
+  border none
+  &::after
+    content ''
+    position absolute
+    left 0
+    bottom 0
+    width 100%
+    height 1px
+    background-color $color
+    transform scaleY(0.5)
