@@ -5,7 +5,8 @@ import {
   getHomeNav,
   getHomeShopList,
   getRecommendShopList,
-  getSearchGoods
+  getSearchGoods,
+  getUserInfo
 } from 'api'
 
 // 引入统一常量
@@ -14,7 +15,8 @@ import {
   HOME_NAV,
   HOME_SHOP_LIST,
   RECOMMEND_SHOP_LIST,
-  SEARCH_DATA
+  SEARCH_DATA,
+  USER_INFO,
 } from './mutations_type'
 export default {
   // 1.获取首页轮播图数据

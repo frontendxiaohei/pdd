@@ -7,6 +7,8 @@ import Recommend from 'views/Recommend/Recommend'
 import Mine from 'views/Mine/Mine'
 import Chat from 'views/Chat/Chat'
 import Login from 'views/Mine/Login/Login'
+import Setting from 'views/Mine/MineSetting'
+import MeDetail from 'views/Mine/MineDetail'
 
 
 
@@ -139,6 +141,14 @@ export default new Router({
     {
       path: '/login',
       component: Login
+    },
+    {
+      path: '/setting',
+      component: Setting
+    }, 
+    {
+      path: '/detail',
+      component: MeDetail
     }
   ]
 })

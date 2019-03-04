@@ -32,7 +32,8 @@ export const phoneCodeLogin = (phone, code) => ajax(Other_URL + '/login_code', {
 // 8.用户名和密码登录
 export const pwdLogin = (name, pwd, captcha) => ajax(Other_URL + '/login_pwd',{name,pwd,captcha},'POST')
 
-
+// 9.获取登陆的用户信息
+export const getUserInfo = () => ajax(Other_URL + '/api/user_info')
 
 
 
